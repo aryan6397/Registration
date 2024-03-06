@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Failed</title>
+  <style>
+    /* Common styles (styles for the registration form can be placed here) */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      width: 400px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    /* Error container styles */
+    .error-container {
+      animation: shake 0.6s ease-in-out;
+    }
+
+    /* Error message styles */
+    .error-message {
+      display: block;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f44336;
+      color: #fff;
+      border-radius: 4px;
+      text-align: center;
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    /* Animation styles */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes shake {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      20%, 60%, 80% {
+        transform: translateX(-10px);
+      }
+      40%, 100% {
+        transform: translateX(10px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container error-container">
+    <div id="errorMessage" class="error-message">
+      <p>Registration failed. Please try again.</p>
+    </div>
+  </div>
+
+</body>
+</html>
